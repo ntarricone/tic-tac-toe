@@ -1,27 +1,79 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Tic Tac Toe Game
 
-Currently, two official plugins are available:
+This is a simple Tic Tac Toe game built with React, Vite, and TypeScript.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Overview
 
-## Expanding the ESLint configuration
+This project implements a Tic Tac Toe game with a 3x3 grid, where two players take turns placing their marks (X and O) on the board. The game checks for a winner after each move and displays a congratulatory modal in case of victory. If there is no winner and the board is full, it shows a modal indicating a draw. Note it's only a front end implemantation, no multiplayer is allowed.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Installation
 
-- Configure the top-level `parserOptions` property like this:
+1\. Make sure you have [Node.js](https://nodejs.org/) installed on your system.
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+2\. Clone this repository to your local machine using the following command:
+
+```bash
+
+git clone https://github.com/ntarricone/tic-tac-toe.git
+
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+3\. Navigate to the project directory:
+
+```bash
+
+cd tic-tac-toe
+
+```
+
+4\. Install the dependencies using npm or yarn or pnpm:
+
+```bash
+
+npm install
+
+```
+
+or
+
+```bash
+
+yarn
+
+```
+or
+
+```bash
+
+pnpm
+
+```
+
+## Running the Game
+
+To start the development server and run the game, use the following command:
+
+```bash
+
+npm run dev
+
+```
+
+or
+
+```bash
+
+yarn dev
+
+```
+or
+
+```bash
+
+pnpm dev
+
+```
+
+
+This will open the game in your default browser.
